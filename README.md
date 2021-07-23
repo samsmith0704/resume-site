@@ -1,0 +1,1 @@
+A website to showcase Sam Smith's resume. 
