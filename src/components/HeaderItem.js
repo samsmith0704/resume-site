@@ -6,11 +6,12 @@ const HeaderItem = ({ headerItemTitle }) => {
   const headerItemStyle = {
     marginLeft: "50px",
     marginRight: "50px",
-    color: "blue",
+    color: "Navy",
+    fontFamily: "Comic Sans MS",
   };
 
   const btnStyle = {
-    backgroundColor: isHovered ? "grey" : "white",
+    backgroundColor: isHovered ? "grey" : "salmon",
     border: "none",
     borderRadius: "20px",
   };

@@ -1,14 +1,19 @@
 import React from "react";
 import HeaderItem from "./HeaderItem";
 
-const headerStyle = {
+const innerHeaderStyle = {
   display: "flex",
   justifyContent: "space-between",
 };
+
+const outerHeaderStyle = {
+  backgroundColor: "salmon",
+};
 const Header = () => {
   return (
-    <div>
-      <div style={headerStyle}>
+    <div style={outerHeaderStyle}>
+      <br />
+      <div style={innerHeaderStyle}>
         <HeaderItem headerItemTitle={"Skills"} />
         <HeaderItem headerItemTitle={"Experience"} />
         <HeaderItem headerItemTitle={"Education"} />
