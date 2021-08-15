@@ -10,6 +10,10 @@ const pictureColumnStyle = {
   width: "200px",
   margin: "20px",
   textAlign: "center",
+  border: "2px solid black",
+  padding: "10px",
+  borderRadius: "20px",
+  backgroundColor: "#E8E8E8	",
 };
 const captionStyle = {
   textAlign: "center",
@@ -19,15 +23,18 @@ const captionStyle = {
   padding: "5px",
   fontSize: "10px",
   boxShadow: " 0 0 2px .5px #888",
-  fontFamily: "Comic Sans MS",
+  fontFamily: "Courier New",
+  backgroundColor: "White",
 };
 const nameStyle = {
-  fontFamily: "Comic Sans MS",
+  fontFamily: "Courier New",
 };
 const PictureCard = () => {
   return (
     <div style={pictureColumnStyle}>
-      <h3 style={nameStyle}>Sam Smith</h3>
+      <h3 style={nameStyle}>
+        <b> Sam Smith</b>
+      </h3>
       <img style={pictureStyle} src="../../costar_headshot.png" alt="" />
       <div style={captionStyle}> Software Engineer at CoStar Group</div>
     </div>

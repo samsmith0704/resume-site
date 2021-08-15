@@ -7,11 +7,12 @@ const HeaderItem = ({ headerItemTitle }) => {
     marginLeft: "30px",
     marginRight: "30px",
     color: "Navy",
-    fontFamily: "Comic Sans MS",
+    fontFamily: "Courier New",
   };
 
   const btnStyle = {
-    backgroundColor: isHovered ? "grey" : "salmon",
+    backgroundColor: "salmon",
+    textDecoration: isHovered ? "underline" : "none",
     border: "none",
     borderRadius: "20px",
   };

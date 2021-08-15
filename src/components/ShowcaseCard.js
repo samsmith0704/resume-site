@@ -8,8 +8,14 @@ const cardStyle = {
   margin: "15px",
   fontSize: "12px",
 };
-const ShowcaseCard = ({ text }) => {
-  return <div style={cardStyle}>{text}</div>;
+const ShowcaseCard = ({ boldedText, text }) => {
+  return (
+    <div style={cardStyle}>
+      <b>{boldedText}</b>
+      <br /> <br />
+      {text}
+    </div>
+  );
 };
 
 export default ShowcaseCard;

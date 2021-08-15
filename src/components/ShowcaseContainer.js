@@ -19,14 +19,20 @@ const ShowcaseContainer = () => {
             Skills
           </h3>
           <div style={scStyle}>
-            <ShowcaseCard text="Extensive experience: Javascript, React, Python" />
-            <ShowcaseCard text="Broad knowledge: Java, SQL, HTML, CSS" />
+            <ShowcaseCard
+              boldedText={"Extensive Experience: "}
+              text="Javascript, React, Python"
+            />
+            <ShowcaseCard
+              boldedText={"Broad Knowledge: "}
+              text="Java, SQL, HTML, CSS"
+            />
           </div>
         </div>
       </div>
       <div className="row">
         <div className="col">
-          <div>NOTHING</div>
+          <div></div>
         </div>
         <div className="col-6">
           <h3 style={{ textAlign: "center", textDecoration: "overline" }}>
