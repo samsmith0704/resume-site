@@ -4,8 +4,8 @@ import { useState } from "react";
 const HeaderItem = ({ headerItemTitle }) => {
   const [isHovered, setIsHovered] = useState(false);
   const headerItemStyle = {
-    marginLeft: "50px",
-    marginRight: "50px",
+    marginLeft: "30px",
+    marginRight: "30px",
     color: "Navy",
     fontFamily: "Comic Sans MS",
   };
@@ -31,7 +31,7 @@ const HeaderItem = ({ headerItemTitle }) => {
         onMouseLeave={onLeaveHover}
       >
         <div style={headerItemStyle}>
-          <h3>{headerItemTitle}</h3>
+          <h5>{headerItemTitle}</h5>
         </div>
       </button>
     </div>

@@ -28,7 +28,7 @@ const PictureCard = () => {
   return (
     <div style={pictureColumnStyle}>
       <h3 style={nameStyle}>Sam Smith</h3>
-      <img style={pictureStyle} src="../../self-portrait.jpg" alt="" />
+      <img style={pictureStyle} src="../../costar_headshot.png" alt="" />
       <div style={captionStyle}> Software Engineer at CoStar Group</div>
     </div>
   );

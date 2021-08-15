@@ -4,6 +4,8 @@ import HeaderItem from "./HeaderItem";
 const innerHeaderStyle = {
   display: "flex",
   justifyContent: "space-between",
+  marginLeft: "15px",
+  marginRight: "15px",
 };
 
 const outerHeaderStyle = {
