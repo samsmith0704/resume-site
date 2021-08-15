@@ -11,19 +11,33 @@ const innerHeaderStyle = {
 const outerHeaderStyle = {
   backgroundColor: "salmon",
 };
-const Header = () => {
+
+const Header = React.forwardRef((props, ref) => {
+  const onMenuClick = (ref) => {
+    console.log(ref);
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div style={outerHeaderStyle}>
       <br />
       <div style={innerHeaderStyle}>
         <HeaderItem headerItemTitle={"Skills"} />
-        <HeaderItem headerItemTitle={"Experience"} />
-        <HeaderItem headerItemTitle={"Education"} />
+        <HeaderItem
+          headerItemTitle={"Experience"}
+          ref={ref}
+          onMenuClick={onMenuClick}
+        />
+        <HeaderItem
+          headerItemTitle={"Education"}
+          ref={ref}
+          onMenuClick={onMenuClick}
+        />
         <HeaderItem headerItemTitle={"Portfolio"} />
       </div>
       <hr></hr>
     </div>
   );
-};
+});
+//TODO: Make header fixed
 
 export default Header;

@@ -4,7 +4,6 @@ import ShowcaseContainer from "./ShowcaseContainer";
 const App = () => {
   return (
     <div>
-      <Header />
       <ShowcaseContainer />
     </div>
   );
