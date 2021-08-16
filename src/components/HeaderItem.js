@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const HeaderItem = React.forwardRef((props, ref) => {
+const HeaderItem = (props) => {
   const [isHovered, setIsHovered] = useState(false);
   const headerItemStyle = {
     marginLeft: "30px",
@@ -29,7 +29,9 @@ const HeaderItem = React.forwardRef((props, ref) => {
     <div>
       <button
         style={btnStyle}
-        onClick={() => props.onMenuClick(ref)}
+        onClick={(e) => {
+          props.onMenuClick(e);
+        }}
         onMouseEnter={onHover}
         onMouseLeave={onLeaveHover}
       >
@@ -39,6 +41,6 @@ const HeaderItem = React.forwardRef((props, ref) => {
       </button>
     </div>
   );
-});
+};
 
 export default HeaderItem;

@@ -12,32 +12,34 @@ const outerHeaderStyle = {
   backgroundColor: "salmon",
 };
 
-const Header = React.forwardRef((props, ref) => {
-  const onMenuClick = (ref) => {
-    console.log(ref);
-    ref.current.scrollIntoView({ behavior: "smooth" });
+const Header = () => {
+  const [currentHeaderItem, setCurrentHeaderItem] = React.useState(null);
+  const [x, setX] = React.useState(false);
+  const onMenuClick = (event) => {
+    setX(!x);
+    setCurrentHeaderItem(event.target.innerHTML);
   };
+
+  React.useEffect(() => {
+    if (currentHeaderItem !== null) {
+      document.getElementById(currentHeaderItem).scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, [x]);
   return (
     <div style={outerHeaderStyle}>
       <br />
       <div style={innerHeaderStyle}>
-        <HeaderItem headerItemTitle={"Skills"} />
-        <HeaderItem
-          headerItemTitle={"Experience"}
-          ref={ref}
-          onMenuClick={onMenuClick}
-        />
-        <HeaderItem
-          headerItemTitle={"Education"}
-          ref={ref}
-          onMenuClick={onMenuClick}
-        />
+        <HeaderItem headerItemTitle={"Skills"} onMenuClick={onMenuClick} />
+        <HeaderItem headerItemTitle={"Experience"} onMenuClick={onMenuClick} />
+        <HeaderItem headerItemTitle={"Education"} onMenuClick={onMenuClick} />
         <HeaderItem headerItemTitle={"Portfolio"} />
       </div>
       <hr></hr>
     </div>
   );
-});
+};
 //TODO: Make header fixed
 
 export default Header;

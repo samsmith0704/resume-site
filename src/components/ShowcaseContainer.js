@@ -7,11 +7,9 @@ const scStyle = {
 };
 
 const ShowcaseContainer = () => {
-  const contentRef = React.createRef();
-
   return (
     <div>
-      <Header ref={contentRef} />
+      <Header />
 
       <div className="container">
         <div className="row">
@@ -21,7 +19,10 @@ const ShowcaseContainer = () => {
             </div>
           </div>
           <div className="col-6">
-            <h3 style={{ textAlign: "center", textDecoration: "overline" }}>
+            <h3
+              id="Skills"
+              style={{ textAlign: "center", textDecoration: "overline" }}
+            >
               Skills
             </h3>
             <div style={scStyle}>
@@ -42,7 +43,7 @@ const ShowcaseContainer = () => {
           </div>
           <div className="col-6">
             <h3
-              ref={contentRef}
+              id="Experience"
               style={{ textAlign: "center", textDecoration: "overline" }}
             >
               Experience
@@ -54,12 +55,15 @@ const ShowcaseContainer = () => {
           </div>
         </div>
 
-        <div ref={contentRef} className="row">
+        <div className="row">
           <div className="col">
             <div></div>
           </div>
           <div className="col-6">
-            <h3 style={{ textAlign: "center", textDecoration: "overline" }}>
+            <h3
+              id="Education"
+              style={{ textAlign: "center", textDecoration: "overline" }}
+            >
               Education
             </h3>
 
