@@ -14,9 +14,9 @@ const outerHeaderStyle = {
 
 const Header = () => {
   const [currentHeaderItem, setCurrentHeaderItem] = React.useState(null);
-  const [x, setX] = React.useState(false);
+  const [changeTracker, setChangeTracker] = React.useState(false);
   const onMenuClick = (event) => {
-    setX(!x);
+    setChangeTracker(!changeTracker);
     setCurrentHeaderItem(event.target.innerHTML);
   };
 
@@ -26,7 +26,7 @@ const Header = () => {
         behavior: "smooth",
       });
     }
-  }, [x]);
+  }, [changeTracker]);
   return (
     <div style={outerHeaderStyle}>
       <br />

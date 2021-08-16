@@ -10,7 +10,7 @@ const pictureColumnStyle = {
   width: "200px",
   margin: "20px",
   textAlign: "center",
-  border: "2px solid black",
+  boxShadow: " 0 0 2px .5px #888",
   padding: "10px",
   borderRadius: "20px",
   backgroundColor: "#E8E8E8	",
