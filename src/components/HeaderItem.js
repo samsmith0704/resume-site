@@ -3,18 +3,17 @@ import { useState } from "react";
 
 const HeaderItem = (props) => {
   const [isHovered, setIsHovered] = useState(false);
-  const headerItemStyle = {
-    marginLeft: "30px",
-    marginRight: "30px",
-    color: "Navy",
-    fontFamily: "Courier New",
-  };
 
   const btnStyle = {
-    backgroundColor: "salmon",
+    backgroundColor: "BlanchedAlmond",
     textDecoration: isHovered ? "underline" : "none",
     border: "none",
     borderRadius: "20px",
+    marginLeft: "30px",
+    marginRight: "30px",
+    marginBottom: "0px",
+    color: "Navy",
+    fontFamily: "Courier New",
   };
 
   const onHover = () => {
@@ -35,9 +34,7 @@ const HeaderItem = (props) => {
         onMouseEnter={onHover}
         onMouseLeave={onLeaveHover}
       >
-        <div style={headerItemStyle}>
-          <h5>{props.headerItemTitle}</h5>
-        </div>
+        <h5>{props.headerItemTitle}</h5>
       </button>
     </div>
   );

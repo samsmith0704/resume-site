@@ -19,7 +19,7 @@ const captionStyle = {
   textAlign: "center",
   border: "none",
   marginTop: "10px",
-  borderRadius: "20px",
+  borderRadius: "10px",
   padding: "5px",
   fontSize: "10px",
   boxShadow: " 0 0 2px .5px #888",

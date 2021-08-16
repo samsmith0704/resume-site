@@ -9,7 +9,10 @@ const innerHeaderStyle = {
 };
 
 const outerHeaderStyle = {
-  backgroundColor: "salmon",
+  backgroundColor: "BlanchedAlmond",
+  position: "fixed",
+  width: "100%",
+  height: "15%",
 };
 
 const Header = () => {
@@ -21,8 +24,9 @@ const Header = () => {
   };
 
   React.useEffect(() => {
+    console.log(currentHeaderItem);
     if (currentHeaderItem !== null) {
-      document.getElementById(currentHeaderItem).scrollIntoView({
+      document.getElementById(currentHeaderItem)?.scrollIntoView({
         behavior: "smooth",
       });
     }
@@ -36,7 +40,6 @@ const Header = () => {
         <HeaderItem headerItemTitle={"Education"} onMenuClick={onMenuClick} />
         <HeaderItem headerItemTitle={"Portfolio"} />
       </div>
-      <hr></hr>
     </div>
   );
 };
