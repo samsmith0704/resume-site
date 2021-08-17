@@ -38,7 +38,7 @@ const Header = () => {
         <HeaderItem headerItemTitle={"Skills"} onMenuClick={onMenuClick} />
         <HeaderItem headerItemTitle={"Experience"} onMenuClick={onMenuClick} />
         <HeaderItem headerItemTitle={"Education"} onMenuClick={onMenuClick} />
-        <HeaderItem headerItemTitle={"Portfolio"} />
+        <HeaderItem headerItemTitle={"Portfolio"} onMenuClick={onMenuClick} />
       </div>
     </div>
   );

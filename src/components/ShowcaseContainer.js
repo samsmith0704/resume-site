@@ -12,6 +12,11 @@ import Header from "./Header";
 const showcaseCardStyle = {
   display: "flex",
 };
+const showcaseItemTitleStyle = {
+  textAlign: "center",
+  textDecoration: "overline",
+  color: "white",
+};
 
 const ShowcaseContainer = () => {
   return (
@@ -31,9 +36,7 @@ const ShowcaseContainer = () => {
             </div>
           </div>
           <div className="col-6">
-            <h3 style={{ textAlign: "center", textDecoration: "overline" }}>
-              Skills
-            </h3>
+            <h3 style={showcaseItemTitleStyle}>Skills</h3>
 
             <div style={showcaseCardStyle}>
               <ShowcaseCard
@@ -52,9 +55,7 @@ const ShowcaseContainer = () => {
             <div></div>
           </div>
           <div className="col-6">
-            <h3 style={{ textAlign: "center", textDecoration: "overline" }}>
-              Experience
-            </h3>
+            <h3 style={showcaseItemTitleStyle}>Experience</h3>
             <div style={showcaseCardStyle}>
               <ShowcaseCard text="Riggs Lab" />
               <ShowcaseCard text="CoStar Group" />
@@ -67,12 +68,24 @@ const ShowcaseContainer = () => {
             <div></div>
           </div>
           <div className="col-6">
-            <h3 style={{ textAlign: "center", textDecoration: "overline" }}>
-              Education
-            </h3>
+            <h3 style={showcaseItemTitleStyle}>Education</h3>
 
             <div style={showcaseCardStyle}>
               <ShowcaseCard text="UVA" />
+              <ShowcaseCard text="EMPTY" />
+            </div>
+          </div>
+        </div>
+
+        <div className="row" id="Portfolio">
+          <div className="col">
+            <div></div>
+          </div>
+          <div className="col-6">
+            <h3 style={showcaseItemTitleStyle}>Portfolio</h3>
+
+            <div style={showcaseCardStyle}>
+              <ShowcaseCard text="EMPTY" />
               <ShowcaseCard text="EMPTY" />
             </div>
           </div>

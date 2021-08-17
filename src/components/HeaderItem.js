@@ -6,7 +6,7 @@ const HeaderItem = (props) => {
 
   const btnStyle = {
     backgroundColor: "BlanchedAlmond",
-    textDecoration: isHovered ? "underline" : "none",
+    // textDecoration: isHovered ? "underline" : "none",
     border: "none",
     borderRadius: "20px",
     marginLeft: "30px",
@@ -14,6 +14,7 @@ const HeaderItem = (props) => {
     marginBottom: "0px",
     color: "Navy",
     fontFamily: "Courier New",
+    padding: "0px",
   };
 
   const onHover = () => {
@@ -25,18 +26,16 @@ const HeaderItem = (props) => {
   };
 
   return (
-    <div>
-      <button
-        style={btnStyle}
-        onClick={(e) => {
-          props.onMenuClick(e);
-        }}
-        onMouseEnter={onHover}
-        onMouseLeave={onLeaveHover}
-      >
-        <h5>{props.headerItemTitle}</h5>
-      </button>
-    </div>
+    <button
+      style={btnStyle}
+      onClick={(e) => {
+        props.onMenuClick(e);
+      }}
+      onMouseEnter={onHover}
+      onMouseLeave={onLeaveHover}
+    >
+      <h5>{props.headerItemTitle}</h5>
+    </button>
   );
 };
 
