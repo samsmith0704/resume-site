@@ -16,6 +16,7 @@ const showcaseItemTitleStyle = {
   textAlign: "center",
   textDecoration: "overline",
   color: "white",
+  backgroundColor: "grey",
 };
 
 const ShowcaseContainer = () => {
@@ -36,7 +37,9 @@ const ShowcaseContainer = () => {
             </div>
           </div>
           <div className="col-6">
-            <h3 style={showcaseItemTitleStyle}>Skills</h3>
+            <div style={showcaseItemTitleStyle}>
+              <h3>Skills</h3>
+            </div>
 
             <div style={showcaseCardStyle}>
               <ShowcaseCard

@@ -4,29 +4,34 @@
     <style>
       body {
         background: linear-gradient(
-          to right bottom,
+          to bottom,
           rgb(255, 255, 255),
           rgb(5, 22, 117)
         );
       }
 
       button {
-        background: linear-gradient(to right, rgb(13, 22, 22), rgb(9, 26, 26)),
-          linear-gradient(
-            to right,
-            rgba(255, 0, 0, 1),
-            rgba(255, 0, 180, 1),
-            rgba(0, 100, 200, 1)
-          );
-        background-size: 100% 0.1em, 0 0.1em;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 400ms;
+        color: inherit;
+        text-underline-offset: var(--offset, 0.2em);
+        text-decoration: underline 0.15em;
+        transition: --offset 400ms, text-decoration-color 400ms;
       }
 
       button:hover,
       button:focus {
-        background-size: 0 0.1em, 100% 0.1em;
+        --offset: 0.4em;
+        text-decoration-color: orange;
+      }
+
+      @supports not (background: paint(something)) {
+        button {
+          transition: text-underline-offset 400ms, text-decoration-color 400ms;
+        }
+
+        button:hover,
+        button:focus {
+          text-underline-offset: 0.4em;
+        }
       }
     </style>
     <meta charset="UTF-8" />
