@@ -14,6 +14,7 @@ const pictureColumnStyle = {
   padding: "10px",
   borderRadius: "20px",
   backgroundColor: "#E8E8E8	",
+  position: "fixed",
 };
 const captionStyle = {
   textAlign: "center",
