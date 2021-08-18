@@ -24,16 +24,13 @@ const captionStyle = {
   padding: "5px",
   fontSize: "10px",
   boxShadow: " 0 0 2px .5px #888",
-  fontFamily: "Courier New",
   backgroundColor: "White",
 };
-const nameStyle = {
-  fontFamily: "Courier New",
-};
+
 const PictureCard = () => {
   return (
     <div style={pictureColumnStyle}>
-      <h3 style={nameStyle}>
+      <h3>
         <b> Sam Smith</b>
       </h3>
       <img style={pictureStyle} src="../../costar_headshot.png" alt="" />

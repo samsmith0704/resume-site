@@ -9,10 +9,10 @@ const innerHeaderStyle = {
 };
 
 const outerHeaderStyle = {
-  backgroundColor: "BlanchedAlmond",
   position: "fixed",
   width: "100%",
   height: "15%",
+  backgroundColor: "AliceBlue",
 };
 
 const Header = () => {

@@ -14,9 +14,9 @@ const showcaseCardStyle = {
 };
 const showcaseItemTitleStyle = {
   textAlign: "center",
-  textDecoration: "overline",
   color: "white",
   backgroundColor: "grey",
+  borderRadius: "5px",
 };
 
 const ShowcaseContainer = () => {
