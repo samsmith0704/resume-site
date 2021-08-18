@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-const HeaderItem = (props) => {
-  const [isHovered, setIsHovered] = useState(false);
-
+const HeaderItem = ({ headerItemTitle, onMenuClick }) => {
   const btnStyle = {
     border: "none",
     borderRadius: "20px",
@@ -19,10 +16,10 @@ const HeaderItem = (props) => {
     <button
       style={btnStyle}
       onClick={(e) => {
-        props.onMenuClick(e);
+        onMenuClick(e);
       }}
     >
-      <h5>{props.headerItemTitle}</h5>
+      <h5>{headerItemTitle}</h5>
     </button>
   );
 };
