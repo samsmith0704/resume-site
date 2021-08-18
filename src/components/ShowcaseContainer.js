@@ -8,6 +8,7 @@ import Header from "./Header";
  * Link Github and LinkedIn
  * Get links in header fully working
  * add margin bottom to header
+ * Add some of the stuff to common component, there is so much repeated code here
  */
 const showcaseCardStyle = {
   display: "flex",
@@ -89,6 +90,19 @@ const ShowcaseContainer = () => {
 
             <div style={showcaseCardStyle}>
               <ShowcaseCard text="EMPTY" />
+              <ShowcaseCard text="EMPTY" />
+            </div>
+          </div>
+        </div>
+        <div className="row" id="Contact Info">
+          <div className="col">
+            <div></div>
+          </div>
+          <div className="col-6">
+            <h3 style={showcaseItemTitleStyle}>Contact Info</h3>
+
+            <div style={showcaseCardStyle}>
+              <ShowcaseCard link={"https://github.com/samsmith0704/"} />
               <ShowcaseCard text="EMPTY" />
             </div>
           </div>

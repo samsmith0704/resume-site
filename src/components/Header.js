@@ -39,6 +39,10 @@ const Header = () => {
         <HeaderItem headerItemTitle={"Experience"} onMenuClick={onMenuClick} />
         <HeaderItem headerItemTitle={"Education"} onMenuClick={onMenuClick} />
         <HeaderItem headerItemTitle={"Portfolio"} onMenuClick={onMenuClick} />
+        <HeaderItem
+          headerItemTitle={"Contact Info"}
+          onMenuClick={onMenuClick}
+        />
       </div>
     </div>
   );

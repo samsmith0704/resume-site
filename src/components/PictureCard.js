@@ -13,7 +13,6 @@ const pictureColumnStyle = {
   boxShadow: " 0 0 2px .5px #888",
   padding: "10px",
   borderRadius: "20px",
-  backgroundColor: "#E8E8E8	",
   position: "fixed",
 };
 const captionStyle = {
@@ -29,7 +28,7 @@ const captionStyle = {
 
 const PictureCard = () => {
   return (
-    <div style={pictureColumnStyle}>
+    <div style={pictureColumnStyle} id="pictureColumn">
       <h3>
         <b> Sam Smith</b>
       </h3>
