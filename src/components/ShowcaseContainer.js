@@ -19,17 +19,50 @@ const showcaseItemTitleStyle = {
   backgroundColor: "grey",
   borderRadius: "5px",
 };
-
-const ShowcaseContainer = () => {
+const headerActivationButtonStyle = {
+  position: "fixed",
+};
+const HeaderActivationButton = ({ onClick }) => {
   return (
-    <div>
-      <div>
-        <Header />
+    <button
+      className={"btn btn-primary"}
+      style={headerActivationButtonStyle}
+      onClick={onClick}
+    >
+      Show menu
+    </button>
+  );
+};
+const ShowcaseContainer = () => {
+  const [showHeader, setShowHeader] = React.useState(true);
+  const [showHeaderActivationButton, setShowHeaderActivationButton] =
+    React.useState(false);
+
+  const handleHeaderActivation = () => {
+    setShowHeaderActivationButton(false);
+    setShowHeader(true);
+    console.log(showHeader);
+  };
+  return (
+    <div
+      onWheel={() => {
+        setShowHeader(window.scrollY === 0);
+        setShowHeaderActivationButton(!showHeader);
+      }}
+    >
+      <div>{showHeader && <Header />}</div>
+      <div style={{ textAlign: "center" }}>
+        {" "}
+        {showHeaderActivationButton && (
+          <HeaderActivationButton onClick={handleHeaderActivation} />
+        )}
       </div>
+
       <br />
       <br />
       <br />
       <br />
+
       <div className="container">
         <div className="row" id="Skills">
           <div className="col">
