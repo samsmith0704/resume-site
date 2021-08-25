@@ -11,52 +11,6 @@ import Header from "./Header";
  * Add some of the stuff to common component, there is so much repeated code here
  */
 
-const myContainerStyle = {
-  width: "400px",
-  height: "400px",
-  position: "relative",
-  background: "yellow",
-};
-const myAnimationStyle = {
-  width: "50px",
-  height: "50px",
-  position: "absolute",
-  backgroundColor: "red",
-};
-
-////////////Testing out animation
-let id = null;
-const myMove = () => {
-  console.log("message");
-  let elem = document.getElementById("myAnimation");
-  let pos = 0;
-  clearInterval(id);
-  const frame = () => {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.top = pos + "px";
-      elem.style.left = pos + "px";
-    }
-  };
-  id = setInterval(frame, 10);
-};
-
-const TestBtn = () => {
-  return <button onClick={myMove}>Click Me</button>;
-};
-const TestAnimation = () => {
-  return <div style={myAnimationStyle} id="myAnimation"></div>;
-};
-const TestContainer = () => {
-  return (
-    <div style={myContainerStyle} id="myContainer">
-      <TestAnimation />
-    </div>
-  );
-};
-////////////testing out animation
 const showcaseCardStyle = {
   display: "flex",
 };
@@ -72,6 +26,8 @@ const headerActivationButtonStyle = {
 const HeaderActivationButton = ({ onClick }) => {
   return (
     <button
+      dataToggle="collapse"
+      dataTarget="#header"
       className={"btn btn-primary"}
       style={headerActivationButtonStyle}
       onClick={onClick}
@@ -98,20 +54,20 @@ const ShowcaseContainer = () => {
         setShowHeaderActivationButton(!showHeader);
       }}
     >
-      <div>{showHeader && <Header />}</div>
-      <div style={{ textAlign: "center" }}>
+      <Header />
+      {/* <div>{showHeader && <Header />}</div> */}
+      {/* <div style={{ textAlign: "center" }}>
         {" "}
         {showHeaderActivationButton && (
           <HeaderActivationButton onClick={handleHeaderActivation} />
         )}
-      </div>
+      </div> */}
 
       <br />
       <br />
       <br />
       <br />
-      <TestBtn />
-      <TestContainer />
+
       <div className="container">
         <div className="row" id="Skills">
           <div className="col">

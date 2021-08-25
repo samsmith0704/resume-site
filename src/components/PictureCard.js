@@ -14,6 +14,8 @@ const pictureColumnStyle = {
   padding: "10px",
   borderRadius: "20px",
   position: "fixed",
+  color: "white",
+  backgroundColor: "grey",
 };
 const captionStyle = {
   textAlign: "center",
@@ -24,6 +26,7 @@ const captionStyle = {
   fontSize: "10px",
   boxShadow: " 0 0 2px .5px #888",
   backgroundColor: "White",
+  color: "black",
 };
 
 const PictureCard = () => {
