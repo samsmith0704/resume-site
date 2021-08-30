@@ -25,10 +25,16 @@ const Header = () => {
 
   React.useEffect(() => {
     console.log(currentHeaderItem);
+
+    const yOffset = -100;
+    const element = document.getElementById(currentHeaderItem);
+    const y = element?.getBoundingClientRect().top + yOffset;
+
     if (currentHeaderItem !== null) {
-      document.getElementById(currentHeaderItem)?.scrollIntoView({
-        behavior: "smooth",
-      });
+      // document.getElementById(currentHeaderItem)?.scrollIntoView(true, {
+      //   behavior: "smooth",
+      // });
+      window.scrollBy(0, y);
     }
   }, [changeTracker]);
   return (
