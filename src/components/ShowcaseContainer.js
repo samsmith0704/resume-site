@@ -6,9 +6,9 @@ import Header from "./Header";
 //TODO:
 /**
  * Link Github and LinkedIn
- * Get links in header fully working
- * add margin bottom to header
+ * Fill out showcase cards more, could put TDlist in portfolio, but need something else as well, maybe tlyft for now
  * Add some of the stuff to common component, there is so much repeated code here
+ * deploy this somehow
  */
 
 const showcaseCardStyle = {
