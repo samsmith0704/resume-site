@@ -7,12 +7,12 @@ const pictureStyle = {
 };
 
 const pictureColumnStyle = {
-  width: "200px",
-  margin: "20px",
+  width: "25%",
+  margin: "4%",
   textAlign: "center",
   boxShadow: " 0 0 2px .5px #888",
   padding: "10px",
-  borderRadius: "20px",
+  borderRadius: "4%",
   position: "fixed",
   color: "white",
   backgroundColor: "grey",
@@ -20,7 +20,7 @@ const pictureColumnStyle = {
 const captionStyle = {
   textAlign: "center",
   border: "none",
-  marginTop: "10px",
+  marginTop: "2%",
   borderRadius: "10px",
   padding: "5px",
   fontSize: "10px",

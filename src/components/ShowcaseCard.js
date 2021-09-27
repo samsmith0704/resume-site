@@ -1,11 +1,11 @@
 import React from "react";
 //test
 const cardStyle = {
-  width: "200px",
-  height: "150px",
+  width: "50%",
+  height: "50%",
   padding: "20px",
   margin: "15px",
-  marginBottom: "150px",
+  marginBottom: "40%",
   fontSize: "12px",
   backgroundColor: "LavenderBlush",
   borderRadius: "20px",

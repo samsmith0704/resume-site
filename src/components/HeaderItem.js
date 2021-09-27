@@ -3,9 +3,8 @@ import React from "react";
 const HeaderItem = ({ headerItemTitle, onMenuClick }) => {
   const btnStyle = {
     border: "none",
-    borderRadius: "20px",
-    marginLeft: "30px",
-    marginRight: "30px",
+    marginLeft: "4%",
+    marginRight: "4%",
     marginBottom: "0px",
     color: "grey",
     padding: "0px",
