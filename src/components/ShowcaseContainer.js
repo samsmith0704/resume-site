@@ -15,6 +15,7 @@ const showcaseCardStyle = {
   display: "flex",
 };
 const showcaseItemTitleStyle = {
+  marginTop: "5%",
   textAlign: "center",
   color: "white",
   backgroundColor: "grey",
@@ -114,7 +115,7 @@ const ShowcaseContainer = () => {
 
             <div style={showcaseCardStyle}>
               <ShowcaseCard text="UVA" />
-              <ShowcaseCard text="EMPTY" />
+              <ShowcaseCard text="Indian Hill High School" />
             </div>
           </div>
         </div>

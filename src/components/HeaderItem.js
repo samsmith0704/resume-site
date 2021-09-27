@@ -3,6 +3,7 @@ import React from "react";
 const HeaderItem = ({ headerItemTitle, onMenuClick }) => {
   const btnStyle = {
     border: "none",
+    marginTop: "0px",
     marginLeft: "4%",
     marginRight: "4%",
     marginBottom: "0px",

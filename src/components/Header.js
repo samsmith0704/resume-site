@@ -11,7 +11,7 @@ const innerHeaderStyle = {
 const outerHeaderStyle = {
   position: "fixed",
   width: "100%",
-  height: "15%",
+  height: "10%",
   backgroundColor: "AliceBlue",
 };
 
