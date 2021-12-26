@@ -68,10 +68,6 @@ const ShowcaseContainer = () => {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
       <div className="container">
         <div className="row" id="Skills">
@@ -104,8 +100,21 @@ const ShowcaseContainer = () => {
           <div className="col-6">
             <h3 style={showcaseItemTitleStyle}>Experience</h3>
             <div style={showcaseCardStyle}>
-              <ShowcaseCard text="Riggs Lab" />
-              <ShowcaseCard text="CoStar Group" />
+              <ShowcaseCard
+                boldedText="Riggs Lab of Systems Engineering and Cognitive Ergonomics:"
+                text="Utilized Python Data Science libraries to analyze eye tracking data from drone pilots and 
+              evaluate efficiency of drone piloting software UI."
+              />
+              <ShowcaseCard
+                boldedText="CoStar Group"
+                text="
+- Create interactive UIs using React
+- Gain exposure to microfrontend architecture
+- Utilize REST API service calls to interact with CoStar databases
+- Implement server side code with Node JS
+- Contribute to full stack Javascript applications
+- Participate in agile development ceremonies such as daily standup meetings and code reviews"
+              />
             </div>
           </div>
         </div>
@@ -118,7 +127,10 @@ const ShowcaseContainer = () => {
             <h3 style={showcaseItemTitleStyle}>Education</h3>
 
             <div style={showcaseCardStyle}>
-              <ShowcaseCard text="UVA" />
+              <ShowcaseCard
+                boldedText="UVA"
+                text="BA in Computer Science, Minor in History. Cumulative GPA: 3.9"
+              />
               <ShowcaseCard text="Indian Hill High School" />
             </div>
           </div>
@@ -146,7 +158,10 @@ const ShowcaseContainer = () => {
 
             <div style={showcaseCardStyle}>
               <ShowcaseCard link={"https://github.com/samsmith0704/"} />
-              <ShowcaseCard text="EMPTY" />
+              <ShowcaseCard
+                boldedText="Email and Phone Number:"
+                text="sjs5pg@virginia.edu, (703)-424-3911"
+              />
             </div>
           </div>
         </div>

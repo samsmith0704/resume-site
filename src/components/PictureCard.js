@@ -9,7 +9,6 @@ const pictureStyle = {
 const pictureColumnStyle = {
   width: "25%",
   margin: "4%",
-  marginTop: "10%",
   textAlign: "center",
   boxShadow: " 0 0 2px .5px #888",
   padding: "10px",
