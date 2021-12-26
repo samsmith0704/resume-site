@@ -68,6 +68,10 @@ const ShowcaseContainer = () => {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       <div className="container">
         <div className="row" id="Skills">
